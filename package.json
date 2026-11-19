@@ -1,0 +1,26 @@
+{
+  "name": "@local/dsh-task-hub",
+  "description": "跨对话统一收件箱：聚合所有工作区会话的待确认问题（含计划待审）与任务完成状态，提供邮箱样式的侧边栏收件箱页",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "dsh": "*",
+    "node": ">=20"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

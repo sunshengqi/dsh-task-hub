@@ -1,0 +1,4 @@
+# Task Hub 组合包层：启用跨对话收件箱插件
+- insert:
+    - id: task-hub
+      name: "@local/dsh-task-hub"
